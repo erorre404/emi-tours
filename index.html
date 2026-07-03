@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMI Tours &mdash; Premium Travel Agency</title>
+  <meta name="description" content="Explore the world with EMI Tours. Your trusted travel partner for unforgettable journeys around the globe.">
+  <meta name="keywords" content="travel, tours, emi tours, morocco, destinations, premium">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader">
+  <div class="preloader-logo"><img src="logo.png" alt="EMI Tours" style="width:120px;height:auto;object-fit:contain"></div>
+  <div class="preloader-bar"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#" class="navbar-brand" onclick="navigateTo('home');return false">
+      <img src="logo.png" alt="EMI Tours" class="navbar-brand-icon">
+    </a>
+    <div class="navbar-links">
+      <a href="#" data-page="home" data-i18n="nav.home">Home</a>
+      <a href="#" data-page="destinations" data-i18n="nav.destinations">Destinations</a>
+      <a href="#" data-page="about" data-i18n="nav.about">About Us</a>
+      <a href="#" data-page="contact" data-i18n="nav.contact">Contact</a>
+      <div class="lang-switcher">
+        <button class="lang-toggle" id="langToggle"><img src="world.png" alt="Language" style="width:20px;height:20px;object-fit:contain"></button>
+        <div class="lang-dropdown" id="langDropdown" >
+          <button class="lang-opt active" data-lang="en">🇬🇧 <span>EN</span></button>
+          <button class="lang-opt" data-lang="fr">🇫🇷 <span>FR</span></button>
+          <button class="lang-opt" data-lang="ar">🇸🇦 <span>AR</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HOME PAGE ============ -->
+<div id="page-home" class="page">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles">
+    <div class="hero-particle"></div><div class="hero-particle"></div>
+    <div class="hero-particle"></div><div class="hero-particle"></div>
+    <div class="hero-particle"></div><div class="hero-particle"></div>
+    <div class="hero-particle"></div><div class="hero-particle"></div>
+  </div>
+  <div class="container">
+    <div class="hero-badge"><i class="fa-solid fa-star"></i> Premium Travel Agency</div>
+    <h1 class="hero-title">Explore the World with <span>EMI Tours</span></h1>
+    <p class="hero-subtitle">Your trusted travel partner for unforgettable journeys around the globe.</p>
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary" data-page="destinations" onclick="navigateTo('destinations');return false">Explore Destinations <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#" class="btn-outline" style="background:transparent;color:black;border-color:#333;" data-page="contact" onclick="navigateTo('contact');return false">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section partners-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fa-solid fa-handshake"></i> <span data-i18n="partners.tag">Our Partners</span></span>
+      <p class="section-desc" data-i18n="partners.desc">Trusted by leading airlines worldwide</p>
+    </div>
+  </div>
+  <div class="partners-track-wrap">
+    <div class="partners-track">
+      <div class="partners-track-inner" id="partnersTrack">
+        <div class="partner-logo"><img src="qatar.png" alt="Qatar Airways" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Qatar Airways</span></div>
+        <div class="partner-logo"><img src="france.png" alt="Air France" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Air France</span></div>
+        <div class="partner-logo"><img src="etihad.png" alt="Etihad Airways" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Etihad Airways</span></div>
+        <div class="partner-logo"><img src="flynas.png" alt="Flynas" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Flynas</span></div>
+        <div class="partner-logo"><img src="kuwaitairways.png" alt="Kuwait Airways" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Kuwait Airways</span></div>
+        <div class="partner-logo"><img src="airarabia.png" alt="Air Arabia" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Air Arabia</span></div>
+        <div class="partner-logo"><img src="royalairmaroc.png" alt="Royal Air Maroc" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Royal Air Maroc</span></div>
+        <div class="partner-logo"><img src="ryanair.png" alt="Ryanair" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Ryanair</span></div>
+        <div class="partner-logo"><img src="turkish.png" alt="Turkish Airlines" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Turkish Airlines</span></div>
+        <div class="partner-logo"><img src="emirates.png" alt="Emirates" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Emirates</span></div>
+        <div class="partner-logo"><img src="gulf.png" alt="Gulf Air" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Gulf Air</span></div>
+        <div class="partner-logo"><img src="qatar.png" alt="Qatar Airways" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Qatar Airways</span></div>
+        <div class="partner-logo"><img src="france.png" alt="Air France" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Air France</span></div>
+        <div class="partner-logo"><img src="etihad.png" alt="Etihad Airways" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Etihad Airways</span></div>
+        <div class="partner-logo"><img src="flynas.png" alt="Flynas" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Flynas</span></div>
+        <div class="partner-logo"><img src="kuwaitairways.png" alt="Kuwait Airways" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Kuwait Airways</span></div>
+        <div class="partner-logo"><img src="airarabia.png" alt="Air Arabia" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Air Arabia</span></div>
+        <div class="partner-logo"><img src="royalairmaroc.png" alt="Royal Air Maroc" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Royal Air Maroc</span></div>
+        <div class="partner-logo"><img src="ryanair.png" alt="Ryanair" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Ryanair</span></div>
+        <div class="partner-logo"><img src="turkish.png" alt="Turkish Airlines" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Turkish Airlines</span></div>
+        <div class="partner-logo"><img src="emirates.png" alt="Emirates" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Emirates</span></div>
+        <div class="partner-logo"><img src="gulf.png" alt="Gulf Air" class="partner-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="partner-logo-fallback">Gulf Air</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section why-section" id="why">
+  <div class="bg-blob bg-blob-1"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fa-solid fa-circle-info"></i> <span data-i18n="why.tag">Why Choose Us</span></span>
+      <h2 class="section-title" data-i18n="why.title">Why EMI Tours?</h2>
+      <p class="section-desc">We combine expertise, passion, and personalized service to create journeys that exceed expectations.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-in">
+        <div class="why-card-icon"><i class="fa-solid fa-calendar-check"></i></div>
+        <h3>Professional Planning</h3>
+        <p>Every detail crafted to perfection. From flights to accommodation, we handle it all with precision.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-card-icon"><i class="fa-solid fa-globe"></i></div>
+        <h3>Worldwide Destinations</h3>
+        <p>Access to 50+ countries with carefully curated travel experiences and local expertise.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Trusted Service</h3>
+        <p>Years of excellence recognized by thousands of happy travelers worldwide.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-card-icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>24/7 Customer Support</h3>
+        <p>We are always here for you, anytime, anywhere. Your peace of mind is our priority.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services-section" id="services">
+  <div class="bg-grid"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fa-solid fa-concierge-bell"></i> <span data-i18n="services.tag">Our Services</span></span>
+      <h2 class="section-title" data-i18n="services.title">Travel Services</h2>
+      <p class="section-desc">Comprehensive travel services tailored to make every journey seamless and memorable.</p>
+    </div>
+    <div class="services-grid"></div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="section" id="destinations">
+  <div class="bg-blob bg-blob-2"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fa-solid fa-location-dot"></i> <span data-i18n="destinations.tag">Popular Destinations</span></span>
+      <h2 class="section-title" data-i18n="destinations.title">Explore Popular Destinations</h2>
+      <p class="section-desc">Handpicked destinations offering unique experiences and unforgettable memories.</p>
+    </div>
+    <div class="destinations-grid"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<!-- CTA -->
+<section class="cta" id="cta">
+  <div class="cta-bg"></div>
+  <div class="container">
+    <h2>Ready for Your Next Adventure?</h2>
+    <p>Let us plan the perfect trip for you. Contact us today and start your journey!</p>
+    <a href="#" class="btn-primary" data-page="contact" onclick="navigateTo('contact');return false">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+</section>
+
+</div>
+
+<!-- ============ DESTINATIONS PAGE ============ -->
+<div id="page-destinations" class="page" style="display:none">
+  <section class="section" style="padding-top:150px">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-globe"></i> <span data-i18n="destinationsPage.tag">Our Destinations</span></span>
+        <h2 class="section-title" data-i18n="destinationsPage.title">Discover Amazing Places</h2>
+        <p class="section-desc" data-i18n="destinationsPage.desc">Explore our handpicked selection of extraordinary destinations worldwide</p>
+      </div>
+      <div class="destinations-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ ABOUT PAGE ============ -->
+<div id="page-about" class="page" style="display:none">
+
+  <section class="about-hero">
+    <div>
+      <h1 data-i18n="about.hero.title">About EMI Tours</h1>
+      <p data-i18n="about.hero.desc">Discover our story, mission, and the team behind your journeys.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="image fade-in-left">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" alt="Team" loading="lazy">
+        </div>
+        <div class="about-content fade-in-right">
+          <span class="section-tag"><i class="fa-solid fa-book-open"></i> <span data-i18n="about.story">Our Story</span></span>
+          <h2 data-i18n="about.story">Our Story</h2>
+          <p data-i18n="about.storyText">EMI Tours was founded with a simple vision: to make extraordinary travel accessible to everyone. Since our founding, we have grown from a small local agency into a trusted name in global travel, serving thousands of satisfied clients worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-section);padding-top:80px;padding-bottom:80px">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content fade-in-left">
+          <span class="section-tag"><i class="fa-solid fa-bullseye"></i> <span data-i18n="about.mission">Our Mission</span></span>
+          <h2 data-i18n="about.mission">Our Mission</h2>
+          <p data-i18n="about.missionText">To create unforgettable travel experiences that enrich lives, foster cultural understanding, and connect people with the beauty of our world.</p>
+        </div>
+        <div class="image fade-in-right">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800" alt="Mission" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:80px;padding-bottom:80px">
+    <div class="container">
+      <div class="about-grid">
+        <div class="image fade-in-left">
+          <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?w=800" alt="Vision" loading="lazy">
+        </div>
+        <div class="about-content fade-in-right">
+          <span class="section-tag"><i class="fa-solid fa-eye"></i> <span data-i18n="about.vision">Our Vision</span></span>
+          <h2 data-i18n="about.vision">Our Vision</h2>
+          <p data-i18n="about.visionText">To be the most trusted and innovative travel partner, setting the standard for excellence in the travel industry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-section);padding-top:80px;padding-bottom:80px">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-sparkles"></i> Our Values</span>
+        <h2 class="section-title">Our Values</h2>
+        <p class="section-desc">The principles that guide every journey we create and every relationship we build.</p>
+      </div>
+      <div class="values-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:80px;padding-bottom:80px">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in-scale">
+          <div class="number" data-count="25" data-suffix="+">20+</div>
+          <div class="label" data-i18n="about.stats.years">Years Experience</div>
+        </div>
+        <div class="stat-item fade-in-scale">
+          <div class="number" data-count="10000" data-suffix="+">1000+</div>
+          <div class="label" data-i18n="about.stats.travelers">Happy Travelers</div>
+        </div>
+        <div class="stat-item fade-in-scale">
+          <div class="number" data-count="50" data-suffix="+">150+</div>
+          <div class="label" data-i18n="about.stats.destinations">Destinations</div>
+        </div>
+        <div class="stat-item fade-in-scale">
+          <div class="number" data-count="24" data-suffix="/7">0/7</div>
+          <div class="label" data-i18n="about.stats.support">24/7 Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+</div>
+
+<!-- ============ CONTACT PAGE ============ -->
+<div id="page-contact" class="page" style="display:none">
+  <section class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-envelope"></i> <span data-i18n="contact.tag">Get In Touch</span></span>
+        <h2 class="section-title" data-i18n="contact.title">Contact Us</h2>
+        <p class="section-desc" data-i18n="contact.desc">We would love to hear from you. Reach out to us and let us plan your perfect journey.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info fade-in">
+          <h2 data-i18n="contact.info">Contact Information</h2>
+          <p data-i18n="contact.desc" style="color:var(--text-light);margin-bottom:30px">Reach out to us and let us plan your perfect journey.</p>
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Address</h4>
+              <a href="https://maps.app.goo.gl/Y29sji1K7cGGtHkV9" target="_blank" rel="noopener" style="color:inherit;text-decoration:none"><p data-i18n="contact.address">17 Baht, Rabat 10000, Morocco</p></a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p data-i18n="contact.phoneVal">+212 522 123 456</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-mobile-button"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p data-i18n="contact.whatsappVal">+212 661-371778</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p data-i18n="contact.emailVal">emitoursmaroc@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4 data-i18n="contact.working">Working Hours</h4>
+              <p data-i18n="contact.workingHours">Mon - Fri: 9:00 AM - 18:00 PM<br>Sat: 09:00 AM - 13:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap fade-in">
+          <h3 data-i18n="contact.form">Send us a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label id="form-name-label" for="name" data-i18n="contact.name">Full Name</label>
+              <input type="text" name="name" id="name" required placeholder="John Smith">
+            </div>
+            <div class="form-group">
+              <label id="form-email-label" for="email" data-i18n="contact.email">Email</label>
+              <input type="email" name="email" id="email" required placeholder="john@email.com">
+            </div>
+            <div class="form-group">
+              <label id="form-phone-label" for="phone" data-i18n="contact.phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" required placeholder="+2125 37777722 /24">
+            </div>
+            <div class="form-group">
+              <label id="form-destination-label" for="destination" data-i18n="contact.destination">Destination Interested In</label>
+              <select name="destination" id="destination">
+                <option value="">Select a destination</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Spain">Spain</option>
+                <option value="France">France</option>
+                <option value="Italy">Italy</option>
+                <option value="Greece">Greece</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="UAE">UAE</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Japan">Japan</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Canada">Canada</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label id="form-message-label" for="message" data-i18n="contact.message">Message</label>
+              <textarea name="message" id="message" required placeholder="I would like more information about..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="contact.btn">Send via WhatsApp</span></button>
+          </form>
+        </div>
+      </div>
+      <div class="map-container fade-in">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.789128452127!2d-6.832460024809369!3d33.97152557329827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b872f5c8c6b5%3A0x8f5e6b5a5b5c5d5e!2sRabat%2C%20Morocco!5e0!3m2!1sen!2s!4v1" allowfullscreen="" loading="lazy" title="Map"></iframe>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="logo.png" alt="EMI Tours" class="icon">
+        </div>
+        <p data-i18n="footer.desc">Your trusted travel partner for unforgettable journeys around the globe.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+     
+      <div>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <div class="footer-links">
+          <a href="tel:+212537777722"><i class="fa-solid fa-phone"></i> +212 537-77 77 22</a>
+          <a href="tel:+212537777724"><i class="fa-solid fa-phone"></i> +212 537-77 77 24</a>
+          <a href="https://wa.me/212661371778"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          <a href="mailto:emitoursmarocgmail.com"><i class="fa-solid fa-envelope"></i> emitoursmarocgmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.rights">&copy; 2026 EMI Tours. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
