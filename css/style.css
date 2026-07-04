@@ -58,6 +58,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
   font-size: 16px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -65,6 +67,7 @@ body {
   color: var(--text);
   background: var(--bg);
   line-height: 1.7;
+  width: 100%;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1663,6 +1666,7 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
   .service-card-icon { width: 46px; height: 46px; font-size: 1.1rem; }
   .service-card h4 { font-size: 0.78rem; }
   .service-card .service-desc { font-size: 0.72rem; }
+  .destinations-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
   .dest-card-image { height: 200px; }
   .why-card { padding: 36px 24px; }
   .team-grid { grid-template-columns: 1fr; }
@@ -1672,9 +1676,76 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
   .stat-item { padding: 32px 20px; }
   .stat-item .number { font-size: 2.4rem; }
   .map-container iframe { height: 280px; }
+  .hero-bg {
+    inset: 0;
+    transform: none;
+  }
+  .bg-blob-1,
+  .bg-blob-2,
+  .bg-blob-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-outline {
+    max-width: 100%;
+  }
+  .partners-track-wrap::before,
+  .partners-track-wrap::after {
+    width: 20px;
+  }
+  .footer {
+    padding: 60px 0 0;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  .footer-brand p {
+    max-width: 100%;
+  }
+  .footer-social {
+    justify-content: center;
+  }
+  .footer h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  [dir="rtl"] .footer h4::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .footer h4 {
+    text-align: center;
+  }
+  .footer-links a {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 360px) {
+  .container {
+    padding: 0 12px;
+  }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
   .partner-logo {
@@ -1690,9 +1761,53 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
   .partners-track-inner {
     animation-duration: 20s;
   }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .service-card {
+    padding: 18px 12px;
+  }
+  .why-card {
+    padding: 28px 18px;
+  }
+  .dest-card-body {
+    padding: 18px 16px 22px;
+  }
+  .dest-card-image {
+    height: 180px;
+  }
+  .stat-item {
+    padding: 24px 12px;
+  }
+  .stat-item .number {
+    font-size: 1.8rem;
+  }
+  .footer {
+    padding: 40px 0 0;
+  }
+  .footer-grid {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .footer-brand .logo .icon {
+    width: 70px;
+  }
+  .footer-social a {
+    width: 38px;
+    height: 38px;
+    font-size: 0.95rem;
+  }
+  .footer-links a {
+    font-size: 0.8rem;
+  }
+  .footer-bottom {
+    padding: 18px 0;
+    font-size: 0.75rem;
+  }
 }
 
-@media (min-width: 769px) {
+@media (min-width: auto) {
   .navbar-brand {
     order: 1;
     margin-right: 0;
