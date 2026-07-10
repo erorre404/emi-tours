@@ -52,6 +52,9 @@
 <!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
+  <video class="hero-video" autoplay muted loop playsinline poster="logo.png">
+    <source src="hero.mp4" type="video/mp4">
+  </video>
   <div class="hero-overlay"></div>
   <div class="hero-particles">
     <div class="hero-particle"></div><div class="hero-particle"></div>
@@ -60,13 +63,67 @@
     <div class="hero-particle"></div><div class="hero-particle"></div>
   </div>
   <div class="container">
-    <div class="hero-badge"><i class="fa-solid fa-star"></i> Premium Travel Agency</div>
-    <h1 class="hero-title">Explore the World with <span>EMI Tours</span></h1>
-    <p class="hero-subtitle">Your trusted travel partner for unforgettable journeys around the globe.</p>
-    <div class="hero-buttons">
-      <a href="#" class="btn-primary" data-page="destinations" onclick="navigateTo('destinations');return false">Explore Destinations <i class="fa-solid fa-arrow-right"></i></a>
-      <a href="#" class="btn-outline" style="background:transparent;color:black;border-color:#333;" data-page="contact" onclick="navigateTo('contact');return false">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+    <div class="hero-content">
+      <div class="hero-badge"><i class="fa-solid fa-plane"></i> <span data-i18n="hero.badge">Premium Travel Agency</span></div>
+      <div class="hero-title-reveal" id="heroTitleReveal">
+        <h1 class="hero-title-text" id="heroTitleText">EMI T<img src="location.png" alt="Location" class="hero-location-icon">URS</h1>
+        <svg class="hero-trail" id="heroTrail" viewBox="0 0 1000 40" preserveAspectRatio="none">
+          <path d="M0,28 C200,24 400,8 700,6 Q850,5 1000,8" fill="none" stroke="rgba(245,158,11,0.25)" stroke-width="1" stroke-linecap="round"/>
+        </svg>
+        <div class="hero-plane-wrap" id="heroPlaneWrap">
+          <img src="airplane.png" alt="" class="hero-writing-airplane" id="heroPlane">
+        </div>
+        <div class="hero-particles-wrap" id="heroParticlesWrap"></div>
+      </div>
+
+      <p class="hero-subtitle" data-i18n="hero.subtitle">We would love to hear from you. Reach out to us and let us plan your perfect journey.</p>
+      
     </div>
+  </div>
+</section>
+
+<!-- HAJJ CAROUSEL -->
+<section class="section hajj-carousel-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag"><i class="fa-solid fa-kaaba"></i> <span data-i18n="hajj.tag">Sacred Journeys</span></span>
+      <h2 class="section-title" data-i18n="hajj.title">Hajj &amp; Omra Gallery</h2>
+      <p class="section-desc" data-i18n="hajj.desc">Explore the spiritual beauty and sacred moments of Hajj through our curated collection.</p>
+    </div>
+    <div class="hajj-carousel" id="hajjCarousel">
+      <div class="hajj-carousel-viewport">
+        <div class="hajj-carousel-track" id="hajjTrack">
+          <div class="hajj-slide"><img src="hajj/1.png" alt="Hajj - Image 1" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/2.png" alt="Hajj - Image 2" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/3.png" alt="Hajj - Image 3" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/4.png" alt="Hajj - Image 4" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/5.png" alt="Hajj - Image 5" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/6.png" alt="Hajj - Image 6" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/7.png" alt="Hajj - Image 7" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/8.png" alt="Hajj - Image 8" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/9.png" alt="Hajj - Image 9" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/10.png" alt="Hajj - Image 10" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/11.png" alt="Hajj - Image 11" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/12.png" alt="Hajj - Image 12" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/13.png" alt="Hajj - Image 13" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/14.png" alt="Hajj - Image 14" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/15.png" alt="Hajj - Image 15" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/16.png" alt="Hajj - Image 16" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/17.png" alt="Hajj - Image 17" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/18.png" alt="Hajj - Image 18" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/19.png" alt="Hajj - Image 19" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/20.png" alt="Hajj - Image 20" loading="lazy"></div>
+          <div class="hajj-slide"><img src="hajj/21.png" alt="Hajj - Image 21" loading="lazy"></div>
+        </div>
+      </div>
+      <button class="hajj-arrow hajj-prev" aria-label="Previous image">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="hajj-arrow hajj-next" aria-label="Next image">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+    <div class="hajj-dots" id="hajjDots"></div>
   </div>
 </section>
 
