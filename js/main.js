@@ -32,6 +32,12 @@ const i18n = {
     destinations: { tag: 'Popular Destinations', title: 'Explore Popular Destinations', discover: 'Discover' },
     cta: { title: 'Ready for Your Next Adventure?', desc: 'Let us plan the perfect trip for you. Contact us today!', btn: 'Contact Us' },
     footer: { desc: 'Your trusted travel partner for unforgettable journeys around the globe.', quickLinks: 'Quick Links', destinations: 'Destinations', contact: 'Contact', rights: '\u00a9 2026 EMI Tours. All rights reserved.' },
+    features: { learnMore: 'Learn More', cards: [
+      { tag: 'DESTINATIONS', title: 'Discover Amazing Places', desc: 'Explore breathtaking destinations carefully selected to create unforgettable travel experiences around the world.' },
+      { tag: 'TOURS', title: 'Tailor-Made Tours', desc: 'Personalized itineraries designed to match your interests, schedule, and travel style.' },
+      { tag: 'SUPPORT', title: 'Travel With Confidence', desc: 'Enjoy secure booking, premium service, and 24/7 support from our travel experts.' }
+    ] },
+    hajj: { tag: 'Sacred Journeys', title: 'Hajj & Omra Gallery', desc: 'Explore the spiritual beauty and sacred moments of Hajj through our curated collection.' },
     about: { hero: { title: 'About EMI Tours', desc: 'Discover our story, mission, and the values that drive every journey we create.' }, story: 'Our Story', storyText: 'Founded in 2003, EMI Tours is a travel agency established by Mrs. Imane Lamrani, who has over 25 years of experience in the tourism and travel industry. In addition to leading EMI Tours as its Founder and Chief Executive Officer, Mrs. Lamrani currently serves as the President of the Association of Travel Agencies of Rabat-Sal\u00e9-K\u00e9nitra. EMI Tours provides a comprehensive range of travel services, including airline ticketing, hotel reservations in Morocco and abroad, organized tours, religious tourism, domestic and international travel, incentive travel, and event management. Licensed by the Moroccan Ministry of Tourism and accredited by IATA, EMI Tours has built a strong reputation for professionalism, reliability, and excellence in customer service.', mission: 'Our Values', missionText: 'At EMI Tours, our clients are at the heart of everything we do. Their expectations guide our work, their feedback drives our continuous improvement, and their preferences inspire the destinations and services we offer. To remain true to this commitment, we embrace a set of core values every day: availability, quality, professionalism, innovation, and tailor-made service. We are dedicated to delivering personalized, reliable, and unforgettable travel experiences while providing exceptional support throughout every stage of our clients\u2019 journeys.', vision: 'Our Vision', visionText: 'To be the most trusted and innovative travel partner in Morocco and beyond, setting the standard for excellence in the travel industry. We envision a world where travel is accessible, transformative, and a force for good — bridging cultures and creating memories that last a lifetime.', stats: { years: 'Years Experience', travelers: 'Happy Travelers', destinations: 'Destinations', support: '24/7 Support' }},
     valuesTag: 'Our Values',
     valuesTitle: 'The Principles That Guide Us',
@@ -75,6 +81,12 @@ const i18n = {
     destinations: { tag: 'Destinations Populaires', title: 'Explorez Nos Destinations', discover: 'D\u00e9couvrir' },
     cta: { title: 'Pr\u00eat pour votre Prochaine Aventure ?', desc: 'Laissez-nous planifier le voyage parfait pour vous. Contactez-nous d\u00e8s aujourd\'hui !', btn: 'Contactez-Nous' },
     footer: { desc: 'Votre partenaire de confiance pour des voyages inoubliables autour du globe.', quickLinks: 'Liens Rapides', destinations: 'Destinations', contact: 'Contact', rights: '\u00a9 2026 EMI Tours. Tous droits r\u00e9serv\u00e9s.' },
+    features: { learnMore: 'En Savoir Plus', cards: [
+      { tag: 'DESTINATIONS', title: 'D\u00e9couvrez des Lieux Magnifiques', desc: 'Explorez des destinations \u00e0 couper le souffle soigneusement s\u00e9lectionn\u00e9es pour cr\u00e9er des exp\u00e9riences de voyage inoubliables \u00e0 travers le monde.' },
+      { tag: 'VOYAGES', title: 'Voyages Sur Mesure', desc: 'Des itin\u00e9raires personnalis\u00e9s con\u00e7us pour correspondre \u00e0 vos int\u00e9r\u00eats, votre emploi du temps et votre style de voyage.' },
+      { tag: 'SOUTIEN', title: 'Voyagez en Toute Confiance', desc: 'B\u00e9n\u00e9ficiez d\'une r\u00e9servation s\u00e9curis\u00e9e, d\'un service premium et d\'un support 24h/24 de la part de nos experts en voyage.' }
+    ] },
+    hajj: { tag: 'Voyages Sacr\u00e9s', title: 'Galerie Hajj & Omra', desc: 'D\u00e9couvrez la beaut\u00e9 spirituelle et les moments sacr\u00e9s du Hajj \u00e0 travers notre collection.' },
     about: { hero: { title: '\u00c0 Propos d\'EMI Tours', desc: 'D\u00e9couvrez notre histoire, notre mission et l\u2019\u00e9quipe derri\u00e8re vos voyages.' }, story: 'Notre Histoire', storyText: 'Fond\u00e9e en 2003, EMI Tours est une agence de voyages cr\u00e9\u00e9e par Mme Imane Lamrani, dont l\u2019exp\u00e9rience s\u2019\u00e9l\u00e8ve \u00e0 25 ans dans le secteur du tourisme et des voyages. Par ailleurs, la fondatrice Directrice G\u00e9n\u00e9rale d\u2019Emi Tours est actuellement pr\u00e9sidente de l\u2019Association des Agences de Voyages de Rabat Sal\u00e9 Kenitra. Op\u00e9rant dans toutes les activit\u00e9s li\u00e9es \u00e0 sa profession, \u00e0 savoir : la billetterie, les r\u00e9servations d\u2019h\u00f4tels au Maroc et \u00e0 l\u2019international, les voyages organis\u00e9es, le tourisme religieux, le tourisme interne et international, l\u2019incentive et l\u2019\u00e9v\u00e9nementiel, Emi Tours est une agence agr\u00e9\u00e9e par le Minist\u00e8re du Tourisme et par l\u2019IATA qui jouit d\u2019une r\u00e9putation irr\u00e9prochable.', mission: 'Nos Valeurs', missionText: 'Ayant plac\u00e9 le client au centre de notre activit\u00e9, nous lui accordons donc la priorit\u00e9 supr\u00eame. Ses attentes sont nos axes de travail, ses remarques sont nos pistes d\u2019am\u00e9lioration, et ses go\u00fbts inspirent les destinations et les services que nous proposons. Afin de rester fid\u00e8les \u00e0 cette priorit\u00e9, nous conjuguons au quotidien des valeurs essentielles qui d\u00e9finissent notre identit\u00e9 : la disponibilit\u00e9, la qualit\u00e9, le professionnalisme, l\u2019innovation et le sur-mesure. Chez EMI Tours, nous nous engageons \u00e0 offrir \u00e0 chacun de nos clients une exp\u00e9rience de voyage personnalis\u00e9e, fiable et m\u00e9morable, avec un accompagnement d\u2019excellence \u00e0 chaque \u00e9tape de son voyage.', vision: 'Notre Vision', visionText: '\u00catre le partenaire de voyage le plus fiable et innovant au Maroc et au-del\u00e0, \u00e9tablissant la norme d\u2019excellence dans l\u2019industrie du voyage. Nous envisageons un monde o\u00f9 le voyage est accessible, transformateur et une force pour le bien \u2014 reliant les cultures et cr\u00e9ant des souvenirs qui durent toute une vie.', stats: { years: 'Ann\u00e9es d\'Exp\u00e9rience', travelers: 'Voyageurs Satisfaits', destinations: 'Destinations', support: 'Support 24/7' }},
     valuesTag: 'Nos Valeurs',
     valuesTitle: 'Les Principes Qui Nous Guident',
@@ -117,6 +129,12 @@ const i18n = {
     destinations: { tag: '\u0627\u0644\u0648\u062c\u0647\u0627\u062a \u0627\u0644\u0634\u0647\u064a\u0631\u0629', title: '\u0627\u0633\u062a\u0643\u0634\u0641 \u0627\u0644\u0648\u062c\u0647\u0627\u062a \u0627\u0644\u0634\u0647\u064a\u0631\u0629', discover: '\u0627\u0643\u062a\u0634\u0641' },
     cta: { title: '\u0647\u0644 \u0623\u0646\u062a \u0645\u0633\u062a\u0639\u062f \u0644\u0645\u063a\u0627\u0645\u0631\u062a\u0643 \u0627\u0644\u0642\u0627\u062f\u0645\u0629\u061f', desc: '\u062f\u0639\u0646\u0627 \u0646\u062e\u0637\u0637 \u0644\u0644\u0631\u062d\u0644\u0629 \u0627\u0644\u0645\u062b\u0627\u0644\u064a\u0629 \u0644\u0643. \u0627\u062a\u0635\u0644 \u0628\u0646\u0627 \u0627\u0644\u064a\u0648\u0645!', btn: '\u0627\u062a\u0635\u0644 \u0628\u0646\u0627' },
     footer: { desc: '\u0634\u0631\u064a\u0643\u0643 \u0627\u0644\u0645\u0648\u062b\u0648\u0642 \u0641\u064a \u0627\u0644\u0633\u0641\u0631 \u0644\u0631\u062d\u0644\u0627\u062a \u0644\u0627 \u062a\u064f\u0646\u0633\u0649 \u062d\u0648\u0644 \u0627\u0644\u0639\u0627\u0644\u0645.', quickLinks: '\u0631\u0648\u0627\u0628\u0637 \u0633\u0631\u064a\u0639\u0629', destinations: '\u0627\u0644\u0648\u062c\u0647\u0627\u062a', contact: '\u0627\u062a\u0635\u0644 \u0628\u0646\u0627', rights: '\u00a9 2026 \u0625\u064a\u0645\u064a \u062a\u0648\u0631\u0632. \u062c\u0645\u064a\u0639 \u0627\u0644\u062d\u0642\u0648\u0642 \u0645\u062d\u0641\u0648\u0638\u0629.' },
+    features: { learnMore: '\u0627\u0639\u0631\u0641 \u0627\u0644\u0645\u0632\u064a\u062f', cards: [
+      { tag: '\u0627\u0644\u0648\u062c\u0647\u0627\u062a', title: '\u0627\u0643\u062a\u0634\u0641 \u0623\u0645\u0627\u0643\u0646 \u0631\u0627\u0626\u0639\u0629', desc: '\u0627\u0633\u062a\u0643\u0634\u0641 \u0648\u062c\u0647\u0627\u062a \u062e\u0644\u0627\u0628\u0629 \u062a\u0645 \u0627\u062e\u062a\u064a\u0627\u0631\u0647\u0627 \u0628\u0639\u0646\u0627\u064a\u0629 \u0644\u062e\u0644\u0642 \u062a\u062c\u0627\u0631\u0628 \u0633\u0641\u0631 \u0644\u0627 \u062a\u064f\u0646\u0633\u0649 \u062d\u0648\u0644 \u0627\u0644\u0639\u0627\u0644\u0645.' },
+      { tag: '\u0627\u0644\u0631\u062d\u0644\u0627\u062a', title: '\u0631\u062d\u0644\u0627\u062a \u0645\u062e\u0635\u0635\u0629', desc: '\u0645\u0633\u0627\u0631\u0627\u062a \u0634\u062e\u0635\u064a\u0629 \u0645\u0635\u0645\u0645\u0629 \u0644\u062a\u0646\u0627\u0633\u0628 \u0627\u0647\u062a\u0645\u0627\u0645\u0627\u062a\u0643 \u0648\u062c\u062f\u0648\u0644\u0643 \u0648\u0623\u0633\u0644\u0648\u0628 \u0633\u0641\u0631\u0643.' },
+      { tag: '\u0627\u0644\u062f\u0639\u0645', title: '\u0633\u0627\u0641\u0631 \u0628\u062b\u0642\u0629', desc: '\u0627\u0633\u062a\u0645\u062a\u0639 \u0628\u0627\u0644\u062d\u062c\u0632 \u0627\u0644\u0622\u0645\u0646 \u0648\u0627\u0644\u062e\u062f\u0645\u0629 \u0627\u0644\u0645\u062a\u0645\u064a\u0632\u0629 \u0648\u0627\u0644\u062f\u0639\u0645 \u0639\u0644\u0649 \u0645\u062f\u0627\u0631 \u0627\u0644\u0633\u0627\u0639\u0629 \u0645\u0646 \u062e\u0628\u0631\u0627\u0621 \u0627\u0644\u0633\u0641\u0631 \u0644\u062f\u064a\u0646\u0627.' }
+    ] },
+    hajj: { tag: '\u0631\u062d\u0644\u0627\u062a \u0645\u0642\u062f\u0633\u0629', title: '\u0645\u0639\u0631\u0636 \u0627\u0644\u062d\u062c \u0648\u0627\u0644\u0639\u0645\u0631\u0629', desc: '\u0627\u0643\u062a\u0634\u0641 \u0627\u0644\u062c\u0645\u0627\u0644 \u0627\u0644\u0631\u0648\u062d\u064a \u0648\u0627\u0644\u0644\u062d\u0638\u0627\u062a \u0627\u0644\u0645\u0642\u062f\u0633\u0629 \u0645\u0646 \u0627\u0644\u062d\u062c \u0645\u0646 \u062e\u0644\u0627\u0644 \u0645\u062c\u0645\u0648\u0639\u062a\u0646\u0627 \u0627\u0644\u0645\u062e\u062a\u0627\u0631\u0629.' },
     about: { hero: { title: '\u0639\u0646 \u0625\u064a\u0645\u064a \u062a\u0648\u0631\u0632', desc: '\u0627\u0643\u062a\u0634\u0641 \u0642\u0635\u062a\u0646\u0627 \u0648\u0631\u0633\u0627\u0644\u062a\u0646\u0627 \u0648\u0627\u0644\u0641\u0631\u064a\u0642 \u0627\u0644\u0630\u064a \u064a\u0642\u0641 \u0648\u0631\u0627\u0621 \u0631\u062d\u0644\u0627\u062a\u0643.' }, story: '\u0642\u0635\u062a\u0646\u0627', storyText: '\u062a\u0623\u0633\u0633\u062a EMI Tours \u0633\u0646\u0629 2003 \u0639\u0644\u0649 \u064a\u062f \u0627\u0644\u0633\u064a\u062f\u0629 \u0625\u064a\u0645\u0627\u0646 \u0627\u0644\u0639\u0645\u0631\u0627\u0646\u064a\u060c \u0627\u0644\u062a\u064a \u062a\u0645\u062a\u0644\u0643 \u0623\u0643\u062b\u0631 \u0645\u0646 25 \u0639\u0627\u0645\u064b\u0627 \u0645\u0646 \u0627\u0644\u062e\u0628\u0631\u0629 \u0641\u064a \u0645\u062c\u0627\u0644 \u0627\u0644\u0633\u064a\u0627\u062d\u0629 \u0648\u0627\u0644\u0633\u0641\u0631. \u0648\u0628\u0627\u0644\u0625\u0636\u0627\u0641\u0629 \u0625\u0644\u0649 \u0643\u0648\u0646\u0647\u0627 \u0627\u0644\u0645\u0624\u0633\u0633\u0629 \u0648\u0627\u0644\u0645\u062f\u064a\u0631\u0629 \u0627\u0644\u0639\u0627\u0645\u0629 \u0644\u0634\u0631\u0643\u0629 EMI Tours\u060c \u062a\u0634\u063a\u0644 \u0627\u0644\u0633\u064a\u062f\u0629 \u0625\u064a\u0645\u0627\u0646 \u0627\u0644\u0639\u0645\u0631\u0627\u0646\u064a \u062d\u0627\u0644\u064a\u064b\u0627 \u0645\u0646\u0635\u0628 \u0631\u0626\u064a\u0633\u0629 \u062c\u0645\u0639\u064a\u0629 \u0648\u0643\u0627\u0644\u0627\u062a \u0627\u0644\u0623\u0633\u0641\u0627\u0631 \u0628\u062c\u0647\u0629 \u0627\u0644\u0631\u0628\u0627\u0637 \u0633\u0644\u0627 \u0627\u0644\u0642\u0646\u064a\u0637\u0631\u0629. \u062a\u0642\u062f\u0645 EMI Tours \u0645\u062c\u0645\u0648\u0639\u0629 \u0645\u062a\u0643\u0627\u0645\u0644\u0629 \u0645\u0646 \u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0633\u064a\u0627\u062d\u064a\u0629\u060c \u062a\u0634\u0645\u0644 \u062d\u062c\u0632 \u062a\u0630\u0627\u0643\u0631 \u0627\u0644\u0637\u064a\u0631\u0627\u0646\u060c \u0648\u062d\u062c\u0648\u0632\u0627\u062a \u0627\u0644\u0641\u0646\u0627\u062f\u0642 \u062f\u0627\u062e\u0644 \u0627\u0644\u0645\u063a\u0631\u0628 \u0648\u062e\u0627\u0631\u062c\u0647\u060c \u0648\u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u0631\u062d\u0644\u0627\u062a\u060c \u0648\u0627\u0644\u0633\u064a\u0627\u062d\u0629 \u0627\u0644\u062f\u064a\u0646\u064a\u0629\u060c \u0648\u0627\u0644\u0633\u064a\u0627\u062d\u0629 \u0627\u0644\u062f\u0627\u062e\u0644\u064a\u0629 \u0648\u0627\u0644\u062f\u0648\u0644\u064a\u0629\u060c \u0648\u0631\u062d\u0644\u0627\u062a \u0627\u0644\u062d\u0648\u0627\u0641\u0632\u060c \u0648\u062a\u0646\u0638\u064a\u0645 \u0627\u0644\u0641\u0639\u0627\u0644\u064a\u0627\u062a \u0648\u0627\u0644\u0645\u0646\u0627\u0633\u0628\u0627\u062a. \u0648\u062a\u062d\u0645\u0644 \u0627\u0644\u0648\u0643\u0627\u0644\u0629 \u0627\u0639\u062a\u0645\u0627\u062f \u0648\u0632\u0627\u0631\u0629 \u0627\u0644\u0633\u064a\u0627\u062d\u0629 \u0627\u0644\u0645\u063a\u0631\u0628\u064a\u0629 \u0648\u0627\u0639\u062a\u0645\u0627\u062f \u0627\u0644\u0627\u062a\u062d\u0627\u062f \u0627\u0644\u062f\u0648\u0644\u064a \u0644\u0644\u0646\u0642\u0644 \u0627\u0644\u062c\u0648\u064a (IATA)\u060c \u0645\u0645\u0627 \u064a\u0639\u0643\u0633 \u0645\u0643\u0627\u0646\u062a\u0647\u0627 \u0627\u0644\u0645\u0631\u0645\u0648\u0642\u0629 \u0648\u0633\u0645\u0639\u062a\u0647\u0627 \u0627\u0644\u0645\u062a\u0645\u064a\u0632\u0629 \u0641\u064a \u062a\u0642\u062f\u064a\u0645 \u062e\u062f\u0645\u0627\u062a \u0633\u064a\u0627\u062d\u064a\u0629 \u0627\u062d\u062a\u0631\u0627\u0641\u064a\u0629 \u0648\u0645\u0648\u062b\u0648\u0642\u0629.', mission: '\u0642\u064a\u0645\u0646\u0627', missionText: '\u0641\u064a EMI Tours \u0646\u0636\u0639 \u0627\u0644\u0639\u0645\u064a\u0644 \u0641\u064a \u0635\u0645\u064a\u0645 \u062c\u0645\u064a\u0639 \u0623\u0639\u0645\u0627\u0644\u0646\u0627\u060c \u0641\u0647\u0648 \u0623\u0648\u0644\u0648\u064a\u062a\u0646\u0627 \u0627\u0644\u0623\u0648\u0644\u0649. \u0625\u0646 \u062a\u0637\u0644\u0639\u0627\u062a\u0647 \u062a\u0648\u062c\u0647 \u062e\u062f\u0645\u0627\u062a\u0646\u0627\u060c \u0648\u0645\u0644\u0627\u062d\u0638\u0627\u062a\u0647 \u062a\u0633\u0627\u0639\u062f\u0646\u0627 \u0639\u0644\u0649 \u0627\u0644\u062a\u0637\u0648\u0631\u060c \u0648\u0627\u0647\u062a\u0645\u0627\u0645\u0627\u062a\u0647 \u062a\u0644\u0647\u0645\u0646\u0627 \u0641\u064a \u0627\u062e\u062a\u064a\u0627\u0631 \u0623\u0641\u0636\u0644 \u0627\u0644\u0648\u062c\u0647\u0627\u062a \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a. \u0648\u0644\u0644\u062d\u0641\u0627\u0638 \u0639\u0644\u0649 \u0647\u0630\u0627 \u0627\u0644\u0627\u0644\u062a\u0632\u0627\u0645\u060c \u0646\u0644\u062a\u0632\u0645 \u064a\u0648\u0645\u064a\u064b\u0627 \u0628\u0645\u062c\u0645\u0648\u0639\u0629 \u0645\u0646 \u0627\u0644\u0642\u064a\u0645 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629 \u0627\u0644\u062a\u064a \u062a\u0645\u064a\u0632\u0646\u0627\u060c \u0648\u0647\u064a: \u0627\u0644\u062a\u0648\u0641\u0631\u060c \u0627\u0644\u062c\u0648\u062f\u0629\u060c \u0627\u0644\u0627\u062d\u062a\u0631\u0627\u0641\u064a\u0629\u060c \u0627\u0644\u0627\u0628\u062a\u0643\u0627\u0631\u060c \u0648\u0627\u0644\u062e\u062f\u0645\u0627\u062a \u0627\u0644\u0645\u0635\u0645\u0645\u0629 \u062e\u0635\u064a\u0635\u064b\u0627 \u0644\u0643\u0644 \u0639\u0645\u064a\u0644. \u0646\u0633\u0639\u0649 \u0625\u0644\u0649 \u062a\u0642\u062f\u064a\u0645 \u062a\u062c\u0627\u0631\u0628 \u0633\u0641\u0631 \u0645\u0645\u064a\u0632\u0629 \u0648\u0645\u0648\u062b\u0648\u0642\u0629 \u0648\u0645\u062e\u0635\u0635\u0629\u060c \u0645\u0639 \u0645\u0631\u0627\u0641\u0642\u0629 \u0627\u062d\u062a\u0631\u0627\u0641\u064a\u0629 \u062a\u0636\u0645\u0646 \u0631\u0627\u062d\u0629 \u0639\u0645\u0644\u0627\u0626\u0646\u0627 \u0641\u064a \u0643\u0644 \u0645\u0631\u062d\u0644\u0629 \u0645\u0646 \u0631\u062d\u0644\u062a\u0647\u0645.', vision: '\u0631\u0624\u064a\u062a\u0646\u0627', visionText: '\u0623\u0646 \u0646\u0643\u0648\u0646 \u0634\u0631\u064a\u0643 \u0627\u0644\u0633\u0641\u0631 \u0627\u0644\u0623\u0643\u062b\u0631 \u0645\u0648\u062b\u0648\u0642\u064a\u0629 \u0648\u0627\u0628\u062a\u0643\u0627\u0631\u0627\u064b \u0641\u064a \u0627\u0644\u0645\u063a\u0631\u0628 \u0648\u062e\u0627\u0631\u062c\u0647\u060c \u0648\u0646\u0636\u0639 \u0645\u0639\u064a\u0627\u0631 \u0627\u0644\u062a\u0645\u064a\u0632 \u0641\u064a \u0635\u0646\u0627\u0639\u0629 \u0627\u0644\u0633\u0641\u0631.', stats: { years: '\u0633\u0646\u0648\u0627\u062a \u0627\u0644\u062e\u0628\u0631\u0629', travelers: '\u0645\u0633\u0627\u0641\u0631 \u0633\u0639\u064a\u062f', destinations: '\u0648\u062c\u0647\u0629', support: '\u062f\u0639\u0645 24/7' }},
     valuesTag: '\u0642\u064a\u0645\u0646\u0627',
     valuesTitle: '\u0627\u0644\u0645\u0628\u0627\u062f\u0626 \u0627\u0644\u062a\u064a \u062a\u0648\u062c\u0647\u0646\u0627',
@@ -156,6 +174,150 @@ const destinations = [
 ];
 
 
+// ===== HAJJ CAROUSEL =====
+function setupHajjCarousel() {
+  var container = document.getElementById('hajjCarousel');
+  if (!container) return;
+  var track = container.querySelector('.hajj-carousel-track');
+  var originals = Array.from(track.querySelectorAll('.hajj-slide'));
+  var total = originals.length;
+  var prevBtn = container.querySelector('.hajj-prev');
+  var nextBtn = container.querySelector('.hajj-next');
+  var dotsWrap = document.getElementById('hajjDots');
+  var visibleCount = 3, idx = 0, busy = false;
+
+  function calcVisible() {
+    visibleCount = window.innerWidth <= 768 ? 1 : window.innerWidth <= 1024 ? 2 : 3;
+  }
+
+  function addClones() {
+    track.querySelectorAll('.hajj-slide-cloned').forEach(function(e) { e.remove(); });
+    for (var i = 0; i < visibleCount; i++) {
+      var c = originals[i].cloneNode(true);
+      c.classList.add('hajj-slide-cloned');
+      c.removeAttribute('loading');
+      c.setAttribute('aria-hidden', 'true');
+      track.appendChild(c);
+    }
+    for (var i = total - visibleCount; i < total; i++) {
+      var c = originals[i].cloneNode(true);
+      c.classList.add('hajj-slide-cloned');
+      c.removeAttribute('loading');
+      c.setAttribute('aria-hidden', 'true');
+      track.prepend(c);
+    }
+  }
+
+  function slideW() {
+    var s = track.querySelector('.hajj-slide');
+    return s ? s.offsetWidth : 0;
+  }
+
+  function maxIdx() {
+    return Math.max(0, total - visibleCount);
+  }
+
+  function move(animate) {
+    track.style.transition = animate ? 'transform 0.6s cubic-bezier(0.4,0,0.2,1)' : 'none';
+    track.style.transform = 'translateX(' + (-(idx + visibleCount) * slideW()) + 'px)';
+    if (!animate) void track.offsetHeight;
+  }
+
+  function renderDots() {
+    dotsWrap.innerHTML = '';
+    var n = Math.min(7, maxIdx() + 1);
+    var step = maxIdx() / Math.max(1, n - 1);
+    for (var i = 0; i < n; i++) {
+      var d = document.createElement('button');
+      d.className = 'hajj-dot';
+      var nearest = Math.min(n - 1, Math.round(idx / step));
+      if (i === nearest) d.classList.add('active');
+      d.setAttribute('aria-label', 'Slide ' + (i + 1));
+      (function(target) {
+        d.addEventListener('click', function() { go(target); });
+      })(Math.min(Math.round(i * step), maxIdx()));
+      dotsWrap.appendChild(d);
+    }
+  }
+
+  function go(newIdx) {
+    if (busy) return;
+    newIdx = Math.max(0, Math.min(newIdx, maxIdx()));
+    if (newIdx === idx) return;
+    busy = true;
+    idx = newIdx;
+    move(true);
+    renderDots();
+    track.addEventListener('transitionend', function h() {
+      track.removeEventListener('transitionend', h);
+      busy = false;
+    });
+  }
+
+  function next() {
+    if (busy) return;
+    busy = true;
+    idx++;
+    move(true);
+    renderDots();
+    track.addEventListener('transitionend', function h() {
+      track.removeEventListener('transitionend', h);
+      if (idx >= total) {
+        idx = 0;
+        move(false);
+        renderDots();
+      }
+      busy = false;
+    });
+  }
+
+  function prev() {
+    if (busy) return;
+    busy = true;
+    idx--;
+    move(true);
+    renderDots();
+    track.addEventListener('transitionend', function h() {
+      track.removeEventListener('transitionend', h);
+      if (idx < 0) {
+        idx = maxIdx();
+        move(false);
+        renderDots();
+      }
+      busy = false;
+    });
+  }
+
+  prevBtn.addEventListener('click', prev);
+  nextBtn.addEventListener('click', next);
+
+  var tx = 0;
+  container.addEventListener('touchstart', function(e) { tx = e.touches[0].clientX; }, { passive: true });
+  container.addEventListener('touchend', function(e) {
+    var d = tx - e.changedTouches[0].clientX;
+    if (Math.abs(d) > 50) { d > 0 ? next() : prev(); }
+  }, { passive: true });
+
+  var rt;
+  window.addEventListener('resize', function() {
+    clearTimeout(rt);
+    rt = setTimeout(function() {
+      calcVisible();
+      addClones();
+      if (idx > maxIdx()) idx = maxIdx();
+      if (idx < 0) idx = 0;
+      move(false);
+      renderDots();
+    }, 150);
+  });
+
+  calcVisible();
+  addClones();
+  idx = 0;
+  move(false);
+  renderDots();
+}
+
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => document.querySelector('.preloader')?.classList.add('hidden'), 800);
@@ -168,6 +330,8 @@ document.addEventListener('DOMContentLoaded', () => {
   setupPageNav();
   setupStatsCounter();
   setupHeroParallax();
+  setupHajjCarousel();
+  setupHeroAirplaneSize();
 });
 
 // ===== RENDER =====
@@ -198,11 +362,7 @@ function renderHero() {
   const hero = document.getElementById('hero');
   if (!hero) return;
   hero.querySelector('.hero-badge').innerHTML = `<i class="fa-solid fa-star"></i> ${t('hero.badge')}`;
-  hero.querySelector('.hero-title').innerHTML = t('hero.title');
   hero.querySelector('.hero-subtitle').textContent = t('hero.subtitle');
-  const btns = hero.querySelectorAll('.hero-buttons a');
-  if (btns[0]) btns[0].innerHTML = `${t('hero.btn1')} <i class="fa-solid fa-arrow-right"></i>`;
-  if (btns[1]) btns[1].innerHTML = `${t('hero.btn2')} <i class="fa-solid fa-chevron-right"></i>`;
 }
 
 // ===== WHY US =====
@@ -450,11 +610,14 @@ function setupNavbar() {
 // ===== HERO PARALLAX =====
 function setupHeroParallax() {
   const heroBg = document.querySelector('.hero-bg');
-  if (!heroBg) return;
+  const heroVideo = document.querySelector('.hero-video');
+  if (!heroBg && !heroVideo) return;
   window.addEventListener('scroll', () => {
     const scroll = window.scrollY;
     if (scroll < window.innerHeight) {
-      heroBg.style.transform = `scale(1.05) translateY(${scroll * 0.15}px)`;
+      const offset = `translateY(${scroll * 0.15}px)`;
+      if (heroBg) heroBg.style.transform = `scale(1.05) ${offset}`;
+      if (heroVideo) heroVideo.style.transform = offset;
     }
   });
 }
@@ -564,4 +727,19 @@ function setupStatsCounter() {
   }, { threshold: 0.5 });
   const stats = document.querySelector('.stats-grid');
   if (stats) observer.observe(stats);
+}
+
+// ===== HERO AIRPLANE SIZE =====
+function setupHeroAirplaneSize() {
+  const container = document.getElementById('heroTitleReveal');
+  const text = document.getElementById('heroTitleText');
+  if (!container || !text) return;
+
+  function measure() {
+    const w = text.offsetWidth;
+    if (w > 0) container.style.setProperty('--tw', w + 'px');
+  }
+
+  measure();
+  window.addEventListener('resize', measure);
 }
