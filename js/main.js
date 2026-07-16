@@ -7,7 +7,8 @@ const i18n = {
   en: {
     nav: { home: 'Home', destinations: 'Destinations', about: 'About Us', contact: 'Contact' },
     hero: { badge: 'Premium Travel Agency', title: 'EMI <span>TOURS</span>', subtitle: 'We would love to hear from you. Reach out to us and let us plan your perfect journey.', btn1: 'Explore Destinations', btn2: 'Contact Us' },
-    partners: { tag: 'Our Partners', desc: 'Trusted by leading airlines worldwide' },
+    partners: { tag: 'Our Partners', desc: 'Trusted by leading <b>airlines</b> worldwide' },
+    partnersHotels: { tag: 'Our Partners', desc: 'Trusted by leading <b>hotels</b> worldwide' },
     why: { tag: 'Why Choose Us', title: 'Why EMI Tours?', cards: [
       { title: 'Professional Planning', desc: 'Every detail crafted to perfection. From flights to accommodation, we handle it all.' },
       { title: 'Worldwide Destinations', desc: 'Access to 50+ countries with carefully curated travel experiences.' },
@@ -57,6 +58,7 @@ const i18n = {
     nav: { home: 'Accueil', destinations: 'Destinations', about: '\u00c0 Propos', contact: 'Contact' },
     hero: { badge: 'Agence de Voyage Premium', title: 'EMI <span>TOURS</span>', subtitle: 'Nous aimerions avoir de vos nouvelles. Contactez-nous et laissez-nous planifier votre voyage parfait.', btn1: 'Explorer les Destinations', btn2: 'Contactez-Nous' },
     partners: { tag: 'Nos Partenaires', desc: 'Approuv\u00e9s par les plus grandes compagnies a\u00e9riennes' },
+    partnersHotels: { tag: 'Nos Partenaires', desc: 'Approuv\u00e9s par les plus grands <b>h\u00f4tels</b> du monde' },
     why: { tag: 'Pourquoi Nous Choisir', title: 'Pourquoi EMI Tours ?', cards: [
       { title: 'Planification Professionnelle', desc: 'Chaque d\u00e9tail con\u00e7u \u00e0 la perfection. Vols, h\u00e9bergement, tout est pris en charge.' },
       { title: 'Destinations Mondiales', desc: 'Acc\u00e8s \u00e0 plus de 50 pays avec des exp\u00e9riences de voyage soigneusement s\u00e9lectionn\u00e9es.' },
@@ -105,6 +107,7 @@ const i18n = {
     nav: { home: '\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629', destinations: '\u0627\u0644\u0648\u062c\u0647\u0627\u062a', about: '\u0645\u0646 \u0646\u062d\u0646', contact: '\u0627\u062a\u0635\u0644 \u0628\u0646\u0627' },
     hero: { badge: '\u0648\u0643\u0627\u0644\u0629 \u0633\u0641\u0631 \u0641\u0627\u0626\u0642\u0629', title: 'EMI <span>TOURS</span>', subtitle: '\u0646\u062d\u0646 \u0646\u062a\u0634\u0631\u0641 \u0628\u0627\u0644\u0627\u0633\u062a\u0645\u0627\u0639 \u0625\u0644\u064a\u0643. \u062a\u0648\u0627\u0635\u0644 \u0645\u0639\u0646\u0627 \u0648\u062f\u0639\u0646\u0627 \u0646\u062e\u0637\u0637 \u0644\u0631\u062d\u0644\u062a\u0643 \u0627\u0644\u0645\u062b\u0627\u0644\u064a\u0629.', btn1: '\u0627\u0633\u062a\u0643\u0634\u0641 \u0627\u0644\u0648\u062c\u0647\u0627\u062a', btn2: '\u0627\u062a\u0635\u0644 \u0628\u0646\u0627' },
     partners: { tag: '\u0634\u0631\u0643\u0627\u0624\u0646\u0627', desc: '\u0645\u0648\u062b\u0648\u0642 \u0645\u0646 \u0642\u0628\u0644 \u0634\u0631\u0643\u0627\u062a \u0627\u0644\u0637\u064a\u0631\u0627\u0646 \u0627\u0644\u0631\u0627\u0626\u062f\u0629 \u0639\u0627\u0644\u0645\u064a\u0627\u064b' },
+    partnersHotels: { tag: '\u0634\u0631\u0643\u0627\u0624\u0646\u0627', desc: '\u0645\u0648\u062b\u0648\u0642 \u0645\u0646 \u0623\u0643\u0628\u0631 \u0641\u0646\u0627\u062f\u0642 \u0627\u0644\u0641\u0646\u0627\u062f\u0642 \u0645\u0633\u062a\u062d\u064a\u0636\u0629' },
     why: { tag: '\u0644\u0645\u0627\u0630\u0627 \u062a\u062e\u062a\u0627\u0631\u0646\u0627', title: '\u0644\u0645\u0627\u0630\u0627 \u0625\u064a\u0645\u064a \u062a\u0648\u0631\u0632\u061f', cards: [
       { title: '\u062a\u062e\u0637\u064a\u0637 \u0627\u062d\u062a\u0631\u0627\u0641\u064a', desc: '\u0643\u0644 \u062a\u0641\u0635\u064a\u0644\u0629 \u0645\u0635\u0645\u0645\u0629 \u0628\u0625\u062a\u0642\u0627\u0646. \u0645\u0646 \u0627\u0644\u0631\u062d\u0644\u0627\u062a \u0625\u0644\u0649 \u0627\u0644\u0625\u0642\u0627\u0645\u0629\u060c \u0646\u062d\u0646 \u0646\u062a\u0648\u0644\u0649 \u0643\u0644 \u0634\u064a\u0621.' },
       { title: '\u0648\u062c\u0647\u0627\u062a \u0639\u0627\u0644\u0645\u064a\u0629', desc: '\u0625\u0645\u0643\u0627\u0646\u064a\u0629 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0623\u0643\u062b\u0631 \u0645\u0646 50 \u062f\u0648\u0644\u0629 \u0645\u0639 \u062a\u062c\u0627\u0631\u0628 \u0633\u0641\u0631 \u0645\u062e\u062a\u0627\u0631\u0629 \u0628\u0639\u0646\u0627\u064a\u0629.' },
@@ -353,7 +356,7 @@ function t(path) {
 // ===== NAV =====
 function renderNav() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
-    el.textContent = t(el.dataset.i18n);
+    el.innerHTML = t(el.dataset.i18n);
   });
 }
 
