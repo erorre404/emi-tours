@@ -457,12 +457,14 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
 }
 
 /* Hero Title — Airplane Reveal (Infinite Loop) */
-.hero-title-reveal {
+.hero-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: fit-content;
+  margin: 0 auto;
   position: relative;
-  margin-bottom: 40px;
-  user-select: none;
-  overflow: visible;
-  --tw: 400px;
 }
 .hero-title-text {
   font-family: 'Playfair Display', serif;
@@ -481,7 +483,6 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
   height: 0.85em;
   width: 0.85em;
   vertical-align: baseline;
-  transform: translateY(0);
   border-radius: 50%;
   object-fit: cover;
   margin: 0 1px;
@@ -489,7 +490,7 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
 }
 .hero-plane-wrap {
   position: absolute;
-  top: 48%;
+  top: 50%;
   left: 0;
   z-index: 3;
   pointer-events: none;
@@ -531,11 +532,11 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
   100% { clip-path: inset(0 100% 0 0); opacity: 0; }
 }
 @keyframes airplaneLoop {
-  0%   { transform: translateX(calc(var(--tw) * -0.12)) translateY(-50%); opacity: 0; }
-  6%   { transform: translateX(calc(var(--tw) * -0.12)) translateY(-50%); opacity: 1; }
-  44%  { transform: translateX(calc(var(--tw) * 1.08))  translateY(calc(-50% + 2px)); opacity: 1; }
-  50%  { transform: translateX(calc(var(--tw) * 1.20))  translateY(-50%); opacity: 0; }
-  100% { transform: translateX(calc(var(--tw) * -0.12)) translateY(-50%); opacity: 0; }
+  0%   { transform: translateX(calc(var(--tw) * -0.02)) translateY(-50%); opacity: 0; }
+  6%   { transform: translateX(calc(var(--tw) * -0.02)) translateY(-50%); opacity: 1; }
+  44%  { transform: translateX(calc(var(--tw) * 1.02))  translateY(calc(-50% + 2px)); opacity: 1; }
+  50%  { transform: translateX(calc(var(--tw) * 1.12))  translateY(-50%); opacity: 0; }
+  100% { transform: translateX(calc(var(--tw) * -0.02)) translateY(-50%); opacity: 0; }
 }
 @keyframes trailLoop {
   0%   { opacity: 0; }
@@ -683,13 +684,19 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
 }
 
 /* ===== PARTNERS CAROUSEL ===== */
-.partners-section {
-  padding: 60px 0;
+.partners-section.section {
+  padding: 60px 0 20px;
   background: #f8f9fc;
   overflow: hidden;
 }
+.partners-section-compact.section {
+  padding-top: 4px;
+}
 .partners-section .section-header {
   margin-bottom: 40px;
+}
+.partners-section-compact .section-header {
+  margin-bottom: 28px;
 }
 .partners-section .section-desc {
   font-size: 0.95rem;
@@ -767,9 +774,20 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
   filter: grayscale(0) brightness(1);
 }
 
+.partners-track-inner-reverse {
+  animation: partnersMarqueeReverse 35s linear infinite;
+}
+.partners-track:hover .partners-track-inner-reverse {
+  animation-play-state: paused;
+}
+
 @keyframes partnersMarquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+@keyframes partnersMarqueeReverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
 }
 
 /* ===== SECTION COMMON ===== */
@@ -1715,8 +1733,11 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
 }
 
 @media (max-width: 768px) {
-  .partners-section {
-    padding: 40px 0;
+  .partners-section.section {
+    padding: 40px 0 14px;
+  }
+  .partners-section-compact.section {
+    padding-top: 2px;
   }
   .partners-section .section-header {
     margin-bottom: 28px;
@@ -1743,6 +1764,9 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
     font-size: 0.7rem;
   }
   .partners-track-inner {
+    animation-duration: 25s;
+  }
+  .partners-track-inner-reverse {
     animation-duration: 25s;
   }
   .partners-track-wrap::before,
@@ -1896,6 +1920,9 @@ button, input, textarea, select { font-family: inherit; font-size: inherit; outl
     height: auto;
   }
   .partners-track-inner {
+    animation-duration: 20s;
+  }
+  .partners-track-inner-reverse {
     animation-duration: 20s;
   }
   .services-grid {
